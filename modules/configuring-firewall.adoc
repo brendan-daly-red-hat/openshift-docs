@@ -103,7 +103,6 @@ You can use the wildcards `\*.quay.io` and `*.openshiftapps.com` instead of `cdn
 |`aws.amazon.com`
 |443
 |Used to install and manage clusters in an AWS environment.
-
 |`*.amazonaws.com`
 
 Alternatively, if you choose to not use a wildcard for AWS APIs, you must allowlist the following URLs:
