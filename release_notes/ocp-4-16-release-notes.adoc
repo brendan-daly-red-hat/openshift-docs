@@ -97,6 +97,11 @@ All {product-title} 4.15 clusters require this administrator acknowledgment befo
 
 For more information, see xref:../updating/preparing_for_updates/updating-cluster-prepare.adoc#updating-cluster-prepare[Preparing to update to {product-title} 4.16].
 
+[id="ocp-4-16-installation-and-update-gcp-regions_{context}"]
+==== Deploy GCP in the Dammam, Saudi Arabia and Johannesburg, South Africa regions
+
+You can deploy {product-title} {product-version} in Google Cloud Platform (GCP) in the Dammam, Saudi Arabia, Middle East (`me-central2`) region and in the Johannesburg, South Africa (`africa-south1`) region. For more information, see xref:../installing/installing_gcp/installing-gcp-account.adoc#installation-gcp-regions_installing-gcp-account[Supported GCP regions].
+
 [id="ocp-4-16-web-console_{context}"]
 === Web console
 
