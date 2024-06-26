@@ -29,8 +29,8 @@ The following permissions are required for creating an {product-title} cluster o
 .Required permissions for creating compute resources
 [%collapsible]
 ====
-* `Microsoft.Compute/availabilitySets/write`
 * `Microsoft.Compute/availabilitySets/read`
+* `Microsoft.Compute/availabilitySets/write`
 * `Microsoft.Compute/disks/beginGetAccess/action`
 * `Microsoft.Compute/disks/delete`
 * `Microsoft.Compute/disks/read`
