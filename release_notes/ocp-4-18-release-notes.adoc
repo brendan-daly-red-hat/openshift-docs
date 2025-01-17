@@ -419,6 +419,13 @@ For more information, see xref:../nodes/clusters/nodes-cluster-enabling-features
 [id="ocp-release-notes-installation-and-update_{context}"]
 === Installation and update
 
+[id="ocp-4.18-installation-and-update-nc2-aws-support_{context}"]
+==== Support for Nutanix Cloud Clusters (NC2) on {aws-first} and on {azure-first}
+With this release, you can...
+
+For more information, see...
+
+
 [id="ocp-release-notes-olm_{context}"]
 === Operator lifecycle
 
