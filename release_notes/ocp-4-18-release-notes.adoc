@@ -461,6 +461,12 @@ For more information about configuring machine types, see xref:../installing/ins
 With this release, you can provide your own private hosted zone when installing a cluster on {gcp-short} into a shared VPC. If you do, the requirements for the bring your own (BYO) zone are that the zone must use a DNS name such as `<cluster name>.<base domain>.` and that you bind the zone to the VPC network of the cluster.
 
 For more information, see xref:../installing/installing_gcp/installing-gcp-shared-vpc.adoc#installation-gcp-shared-vpc-prerequisites_installing-gcp-shared-vpc[Prerequisites for installing a cluster on GCP into a shared VPC] and xref:../installing/installing_gcp/installing-gcp-user-infra-vpc.adoc#prerequisites[Prerequisites for installing a cluster into a shared VPC on GCP using Deployment Manager templates].
+[id="ocp-4-18-installation-and-update-nutanix-preloaded-image-support_{context}"]
+==== Installing a cluster on Nutanix by using a preloaded {op-system} image object
+With this release, you can install a cluster on Nutanix by using the named, preloaded {op-system} image object from the private cloud or the public cloud. Rather than creating and uploading a {op-system} image object for each {product-title} cluster, you can use the `preloadedOSImageName` parameter in the `install-config.yaml` file.
+
+For more information, see xref:../installing/installing_nutanix/installation-config-parameters-nutanix.adoc#installation-configuration-parameters-additional-nutanix_installation-config-parameters-nutanix[Additional Nutanix configuration parameters].
+
 
 [id="ocp-release-notes-olm_{context}"]
 === Operator lifecycle
