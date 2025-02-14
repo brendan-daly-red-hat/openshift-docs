@@ -201,6 +201,14 @@ Ensure that the architecture of the `$RELEASE_IMAGE` matches the architecture of
 ====
 
 . Extract the `ccoctl` binary from the CCO container image within the {product-title} release image by running the following command:
+//Below ifeval added to reflect OSDOCS-12321
+ifeval::["{context}" == "installing-gcp-customizations"]
+[IMPORTANT]
++
+====
+Find the identity pool ID and the provider ID. During cluster installation, the names of these resources is provided to `ccoctl` with the `--name parameter`.
+====
+endif::[]
 +
 [source,terminal]
 ----
