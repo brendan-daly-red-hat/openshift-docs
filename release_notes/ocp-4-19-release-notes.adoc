@@ -424,6 +424,12 @@ Starting in {product-title} 4.14, Extended Update Support (EUS) is extended to t
 [id="ocp-release-notes-installation-and-update_{context}"]
 === Installation and update
 
+[id="ocp-4-19-installation-and-update-azure-spain_{context}"]
+==== Installing a cluster on {azure-short} in the Central Spain region
+You can now install an {product-title} cluster on {azure-short} in the Central Spain region, `spaincentral`.
+
+For more information, see
+
 [id="ocp-release-notes-machine-config-operator_{context}"]
 === Machine Config Operator
 
