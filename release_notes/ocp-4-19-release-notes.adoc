@@ -423,7 +423,7 @@ Starting in {product-title} 4.14, Extended Update Support (EUS) is extended to t
 
 [id="ocp-release-notes-installation-and-update_{context}"]
 === Installation and update
-
+test
 [id="ocp-release-notes-machine-config-operator_{context}"]
 === Machine Config Operator
 
