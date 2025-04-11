@@ -148,7 +148,7 @@ endif::ibm-z[]
 |N/A
 |Network reachability tests
 
-.3+|TCP
+.4+|TCP
 |`1936`
 |Metrics
 
@@ -158,6 +158,9 @@ the Cluster Version Operator on port `9099`.
 
 |`10250`-`10259`
 |The default ports that Kubernetes reserves
+
+|`22623`
+| The port handles the machine config server traffic and points to the control plane machines.
 
 .6+|UDP
 |`4789`
