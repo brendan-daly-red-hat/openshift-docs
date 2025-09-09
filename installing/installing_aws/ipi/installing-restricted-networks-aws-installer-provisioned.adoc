@@ -53,6 +53,8 @@ include::modules/installation-minimum-resource-requirements.adoc[leveloffset=+2]
 
 * xref:../../../scalability_and_performance/optimization/optimizing-storage.adoc#optimizing-storage[Optimizing storage]
 
+include::modules/installing-aws-managing-dns-solution.adoc[leveloffset=+2]
+
 include::modules/installation-aws-config-yaml-customizations.adoc[leveloffset=+2]
 
 [role="_additional-resources"]
@@ -103,6 +105,8 @@ include::modules/cco-ccoctl-creating-individually.adoc[leveloffset=+4]
 include::modules/cco-ccoctl-install-creating-manifests.adoc[leveloffset=+3]
 
 include::modules/installation-launching-installer.adoc[leveloffset=+1]
+
+include::modules/installation-aws-provisioning-dns-records.adoc[leveloffset=+1]
 
 include::modules/cli-logging-in-kubeadmin.adoc[leveloffset=+1]
 
