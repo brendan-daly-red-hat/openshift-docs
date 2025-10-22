@@ -150,6 +150,11 @@ endif::cco-manual-mode[]
 //For providers that support multiple modes of operation
 ifdef::cco-multi-mode[]
 The Cloud Credential Operator (CCO) can be put into manual mode prior to installation in environments where the cloud identity and access management (IAM) APIs are not reachable, or the administrator prefers not to store an administrator-level credential secret in the cluster `kube-system` namespace.
+
+You use the CCO to configure Workload Identity Federation (WIF). Cluster Operators use the credential requests that the CCO creates. The installation program does not use these credential requests. The following list outlines the authentication credentials that you require:
+
+* Cluster installation authentication with a service account that uses a {gcp-short} virtual machine (VM)
+* Cluster Operators that are configured with the CCO to use WIF.
 endif::cco-multi-mode[]
 
 //For providers who only support manual mode

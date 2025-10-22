@@ -1,6 +1,5 @@
 // Module included in the following assemblies:
 //
-// * installing/installing_azure/installing-azure-network-customizations
 
 :_mod-docs-content-type: PROCEDURE
 [id="installation-azure-trusted-launch_{context}"]

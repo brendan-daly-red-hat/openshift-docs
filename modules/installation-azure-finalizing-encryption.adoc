@@ -12,9 +12,6 @@ endif::[]
 ifeval::["{context}" == "installing-azure-government-region"]
 :azure-gov:
 endif::[]
-ifeval::["{context}" == "installing-azure-network-customizations"]
-:azure-public:
-endif::[]
 ifeval::["{context}" == "installing-azure-private"]
 :azure-public:
 endif::[]
@@ -142,9 +139,6 @@ ifeval::["{context}" == "installing-azure-customizations"]
 endif::[]
 ifeval::["{context}" == "installing-azure-government-region"]
 :!azure-gov:
-endif::[]
-ifeval::["{context}" == "installing-azure-network-customizations"]
-:!azure-public:
 endif::[]
 ifeval::["{context}" == "installing-azure-private"]
 :!azure-public:
