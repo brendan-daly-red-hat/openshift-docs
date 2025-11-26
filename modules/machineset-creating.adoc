@@ -51,7 +51,7 @@ endif::vsphere[]
 .Prerequisites
 
 * Deploy an {product-title} cluster.
-* Install the OpenShift CLI (`oc`).
+* Install the {product-title} CLI (`oc`).
 * Log in to `oc` as a user with `cluster-admin` permission.
 ifdef::vsphere[]
 * Have the necessary permissions to deploy VMs in your vCenter instance and have the required access to the datastore specified.
@@ -137,12 +137,16 @@ where:
 
 `metadata.labels.machine.openshift.io/cluster-api-cluster`:: Specifies the cluster infrastructure ID.
 `metadata.labels.name`:: Specifies a default node label.
+
 +
 [NOTE]
 ====
 For clusters that have user-provisioned infrastructure, a compute machine set can only create `worker` and `infra` type machines.
 ====
+
 `spec.template.metadata.spec.providerSpec`:: Specifies the values of the compute machine set CR. The values are platform-specific. For more information about `<providerSpec>` parameters in the CR, see the sample compute machine set CR configuration for your provider.
+`metadata.spec.template.spec.providerSpec`:: The values in the `<providerSpec>` section of the compute machine set CR are platform-specific. For more information about `<providerSpec>` parameters in the CR, see the sample compute machine set CR configuration for your provider.
+
 --
 ifdef::vsphere[]
 .. If you are creating a compute machine set for a cluster that has user-provisioned infrastructure, note the following important values:
@@ -186,12 +190,11 @@ template:
 ----
 
 where:
-
-`vsphere-cloud-credentials`:: Specifies the name of the secret in the `openshift-machine-api` namespace that contains the required vCenter credentials.
-`<disk_name>`:: Specifies the collection of data disk definitions. For more information, see "Configuring data disks by using machine sets".
-`<vm_template_name>`:: Specifies the name of the {op-system} VM template for your cluster that was created during installation.
-`worker-user-data`:: Specifies the name of the secret in the `openshift-machine-api` namespace that contains the required Ignition configuration credentials.
-`<vcenter_server_address>`:: Specifies the IP address or fully qualified domain name (FQDN) of the vCenter server.
+`spec.providerSpec.value.credentialsSecret.name`:: Specifies the name of the secret in the `openshift-machine-api` namespace that contains the required vCenter credentials.
+`spec.providerSpec.value.dataDisks`:: Specifies the collection of data disk definitions. For more information, see "Configuring data disks by using machine sets".
+`spec.providerSpec.value.template`:: Specifies the name of the {op-system} VM template for your cluster that was created during installation.
+`spec.providerSpec.value.network.userDataSecret.name`:: Specifies the name of the secret in the `openshift-machine-api` namespace that contains the required Ignition configuration credentials.
+`spec.providerSpec.value.workspace.server:: Specifies the IP address or fully qualified domain name (FQDN) of the vCenter server.
 
 endif::vsphere[]
 
