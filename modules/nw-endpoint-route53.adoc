@@ -3,6 +3,7 @@
 // * installing/installing_aws/installing-aws-government-region.adoc
 
 :_mod-docs-content-type: REFERENCE
+include::_attributes/common-attributes.adoc[]
 [id="nw-endpoint-route53_{context}"]
 = Ingress Operator endpoint configuration for {aws-short} Route 53
 
@@ -36,9 +37,8 @@ platform:
     - name: tagging
       url: https://tagging.us-gov-west-1.amazonaws.com
 ----
-++
+
 where:
-++
 
 `https://route53.us-gov.amazonaws.com`:: Defaults to `https://route53.us-gov.amazonaws.com` for both {aws-short} GovCloud (US) regions.
 `https://tagging.us-gov-west-1.amazonaws.com`:: Only the US-West region has endpoints for tagging. Omit this parameter if your cluster is in another region.
