@@ -11,6 +11,7 @@ endif::[]
 [id="machineset-imds-options_{context}"]
 = Machine set options for the Amazon EC2 Instance Metadata Service
 
+[role="_abstract"]
 You can use machine sets to create machines that use a specific version of the Amazon EC2 Instance Metadata Service (IMDS). Machine sets can create machines that allow the use of both IMDSv1 and link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html[IMDSv2] or machines that require the use of IMDSv2.
 
 [NOTE]
