@@ -20,12 +20,24 @@ endif::[]
 
 :_mod-docs-content-type: PROCEDURE
 [id="machineset-capacity-reservation_{context}"]
-ifdef::azure[= Configuring Capacity Reservation by using machine sets]
-ifdef::aws[= Configuring Capacity Reservations by using machine sets]
 
+ifdef::azure[]
+= Configuring Capacity Reservation by using machine sets
+endif::azure[]
+
+ifdef::aws[]
+= Configuring Capacity Reservations by using machine sets
+endif::aws[]
+
+[role="_abstract"]
 {product-title} version {product-version} and later supports
-ifdef::azure[on-demand Capacity Reservation with Capacity Reservation groups on {azure-full} clusters.]
-ifdef::aws[Capacity Reservations on {aws-full} clusters, including On-Demand Capacity Reservations and Capacity Blocks for ML.]
+ifdef::azure[]
+on-demand Capacity Reservation with Capacity Reservation groups on {azure-full} clusters.
+endif::azure[]
+
+ifdef::aws[]
+Capacity Reservations on {aws-full} clusters, including On-Demand Capacity Reservations and Capacity Blocks for ML.
+endif::aws[]
 
 You can configure a machine set to deploy machines on any available resources that match the parameters of a capacity request that you define.
 These parameters specify the
@@ -110,12 +122,18 @@ endif::aws[]
 end::controlplane[]
 # ...
 ----
-<1> Specify the ID of the
+
+where:
+
+`spec.template.spec.providerSpec.value.capacityReservationGroupID`:: Specifies the ID of the
+
 ifdef::azure[Capacity Reservation group]
+`spec.template.spec.providerSpec.value.capacityReservationId`:: Specifies the ID of the
 ifdef::aws[Capacity Block for ML or On-Demand Capacity Reservation]
 that you want the machine set to deploy machines on.
+
 ifdef::aws[]
-<2> Specify the market type to use.
+`spec.template.spec.machines_v1beta1_machine_openshift_io.spec.providerSpec.value.marketType`:: Specifies the market
 The following values are valid:
 `CapacityBlock`:: Use this market type with Capacity Blocks for ML.
 `OnDemand`:: Use this market type with On-Demand Capacity Reservations.
