@@ -114,6 +114,14 @@ Item description::
 Detailed information.
 ////
 
+[id="ocp-4-21-installation-and-update-custom-aws-dns_{context}"]
+=== Installing a cluster on {aws-first} with a user-provisioned DNS
+
+You can enable a user-provisioned domain name server (DNS) instead of the default cluster-provisioned DNS solution. For example, your organization’s security policies might not allow the use of public DNS services such as {aws-first} DNS. As a result, you can manage the API and Ingress DNS records in your own system rather than adding the records to the DNS of the cloud. If you use this feature, you must provide your own DNS solution that includes records for api.<cluster_name>.<base_domain>. and *.apps.<cluster_name>.<base_domain>..
+
+For more information, see... [Enabling user-managed DNS] and [Optional AWS configuration parameters]
+
+
 [id="ocp-release-notes-machine-config-operator_{context}"]
 == Machine Config Operator
 
