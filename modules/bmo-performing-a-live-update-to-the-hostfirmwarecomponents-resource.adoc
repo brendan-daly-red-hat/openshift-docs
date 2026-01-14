@@ -6,11 +6,8 @@
 [id="bmo-performing-a-live-update-to-the-hostfirmwarecomponents-resource_{context}"]
 = Performing a live update to the HostFirmwareComponents resource
 
+[role="_abstract"]
 You can perform a live update to the `HostFirmwareComponents` resource on an already provisioned host. Live updates do not trigger deprovisioning and reprovisioning the host.
-
-:FeatureName: Live updating a host
-include::snippets/technology-preview.adoc[]
-:!FeatureName:
 
 [IMPORTANT]
 ====
@@ -27,13 +24,17 @@ Do not perform live updates on production hosts. You can perform live updates to
 +
 [source,terminal]
 ----
-$ oc patch hostfirmwarecomponents <hostname> --type merge -p \// <1>
-    '{"spec": {"updates": [{"component": "<type>", \// <2>
-                        "url": "<url>"}]}}' <3>
+$ oc patch hostfirmwarecomponents <hostname> --type merge -p \
+    '{"spec": {"updates": [{"component": "<type>", \
+                        "url": "<url>"}]}}'
 ----
-<1> Replace `<hostname>` with the name of the host.
-<2> Replace `<type>` with the type of component. Specify `bios` or `bmc`.
-<3> Replace `<url>` with the URL for the component.
++
+where:
+
+`<hostname>`:: Replaces `<hostname>` with the name of the host.
+`<type>`:: Replaces `<type>` with the type of component. Specify `bios` or `bmc`.
+`<url>`:: Replace `<url>` with the URL for the component.
+
 +
 [NOTE]
 ====
@@ -44,9 +45,11 @@ You can also use the `oc edit <hostname> hostfirmwarecomponents -n openshift-mac
 +
 [source,terminal]
 ----
-$ oc drain <node_name> --force <1> 
+$ oc drain <node_name> --force
 ----
-<1> Replace `<node_name>` with the name of the node.
++
+
+Replace `<node_name>` with the name of the node.
 
 . Power off the host for a period of 5 minutes by running the following command:
 +

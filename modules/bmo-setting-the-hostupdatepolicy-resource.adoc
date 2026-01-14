@@ -6,11 +6,8 @@
 [id="bmo-setting-the-hostupdatepolicy-resource_{context}"]
 = Setting the HostUpdatePolicy resource
 
-By default, the `HostUpdatePolicy` disables live updates. To enable live updates, use the following procedure.
-
-:FeatureName: Setting the `HostUpdatePolicy` resource
-include::snippets/technology-preview.adoc[]
-:!FeatureName:
+[role="_abstract"]
+By default, the `HostUpdatePolicy` disables live updates. To enable live updates, create the `HostUpdatePolicy` resource.
 
 .Procedure
 
@@ -29,13 +26,15 @@ You can use any text editor you prefer.
 apiVersion: metal3.io/v1alpha1
 kind: HostUpdatePolicy
 metadata:
-  name: <hostname> <1>
+  name: <hostname>
   namespace: openshift-machine-api
 spec:
   firmwareSettings: onReboot
   firmwareUpdates: onReboot
 ----
-<1> Replace `<hostname>` with the name of the host.
++
+
+Replace `<hostname>` with the name of the host.
 
 . Save the changes to the `hup.yaml` file.
 

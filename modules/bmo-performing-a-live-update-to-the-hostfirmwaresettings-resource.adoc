@@ -6,11 +6,8 @@
 [id="bmo-performing-a-live-update-to-the-hostfirmwaresettings-resource_{context}"]
 = Performing a live update to the HostFirmwareSettings resource
 
+[role="_abstract"]
 You can perform a live update to the `HostFirmareSettings` resource after it has begun running workloads. Live updates do not trigger deprovisioning and reprovisioning the host.
-
-:FeatureName: Live updating a host
-include::snippets/technology-preview.adoc[]
-:!FeatureName:
 
 .Prerequisites
 
@@ -22,11 +19,16 @@ include::snippets/technology-preview.adoc[]
 +
 [source,terminal]
 ----
-$ oc patch hostfirmwaresettings <hostname> --type merge -p \// <1>
-    '{"spec": {"settings": {"<name>": "<value>"}}}' <2>
+$ oc patch hostfirmwaresettings <hostname> --type merge -p \
+    '{"spec": {"settings": {"<name>": "<value>"}}}'
 ----
-<1> Replace `<hostname>` with the name of the host.
-<2> Replace `<name>` with the name of the setting. Replace `<value>` with the value of the setting. You can set multiple name-value pairs.
++
+where:
+
+`<hostname>`:: Replaces `<hostname>` with the name of the host.
+`<name>`:: Replaces `<name>` with the name of the setting.
+`<value>`:: Replaces `<value>` with the value of the setting. You can set multiple name-value pairs.
+
 +
 [NOTE]
 ====
