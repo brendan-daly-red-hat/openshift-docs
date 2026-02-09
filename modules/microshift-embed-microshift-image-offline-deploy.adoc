@@ -69,11 +69,11 @@ microshift-release-info-4.16.0.*.el9.noarch.rpm <1>
 +
 [source,terminal]
 ----
-$ rpm2cpio <my_microshift_release_info> | cpio -idmv <1>
+$ rpm2cpio <my_microshift_release_info> | cpio -idmv
 ./usr/share/microshift/release/release-aarch64.json
 ./usr/share/microshift/release/release-x86_64.json
 ----
-<1> Replace `<my_microshift_release_info>` with the name of the RPM package from the previous step.
+Replace `<my_microshift_release_info>` with the name of the RPM package from the previous step.
 
 . Define the location of your JSON file, which contains the container reference information, by running the following command:
 +
