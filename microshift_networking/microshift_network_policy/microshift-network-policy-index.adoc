@@ -3,6 +3,7 @@
 = About network policies
 include::_attributes/attributes-microshift.adoc[]
 :context: microshift-network-policies
+
 toc::[]
 
 [role="_abstract"]
