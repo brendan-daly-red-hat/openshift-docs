@@ -6,8 +6,8 @@ include::_attributes/common-attributes.adoc[]
 
 toc::[]
 
-Learn about the Node Tuning Operator and how you can use it to manage node-level
-tuning by orchestrating the tuned daemon.
+[role="_abstract"]
+The Node Tuning Operator in {product-title} helps you manage node-level tuning by orchestrating the TuneD daemon. You can use this unified interface to apply custom tuning specifications and achieve low latency performance for high-performance applications.
 
 include::modules/node-tuning-operator.adoc[leveloffset=+1]
 
