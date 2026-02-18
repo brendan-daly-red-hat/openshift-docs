@@ -3382,26 +3382,11 @@ Although the expected wake up latency is under 20μs, latencies exceeding this t
 Testing has shown that wake up latencies are under 20μs for over 99.99999% of the samples.
 (link:https://issues.redhat.com/browse/OCPBUGS-34022[OCPBUGS-34022])
 
-[id="ocp-4-16-asynchronous-errata-updates_{context}"]
+// 4.16.57 about async
+include::modules/rn-async-errata.adoc[leveloffset=+1]
 
-
-== Asynchronous errata updates
-
-Security, bug fix, and enhancement updates for {product-title} {product-version} are released as asynchronous errata through the Red{nbsp}Hat Network. All {product-title} {product-version} errata is https://access.redhat.com/downloads/content/290/[available on the Red Hat Customer Portal]. See the https://access.redhat.com/support/policy/updates/openshift[{product-title} Life Cycle] for more information about asynchronous errata.
-
-Red{nbsp}Hat Customer Portal users can enable errata notifications in the account settings for Red{nbsp}Hat Subscription Management (RHSM). When errata notifications are enabled, users are notified through email whenever new errata relevant to their registered systems are released.
-
-[NOTE]
-====
-Red{nbsp}Hat Customer Portal user accounts must have systems registered and consuming {product-title} entitlements for {product-title} errata notification emails to generate.
-====
-
-This section will continue to be updated over time to provide notes on enhancements and bug fixes for future asynchronous errata releases of {product-title} {product-version}. Versioned asynchronous releases, for example with the form {product-title} {product-version}.z, will be detailed in subsections. In addition, releases in which the errata text cannot fit in the space provided by the advisory will be detailed in subsections that follow.
-
-[IMPORTANT]
-====
-For any {product-title} release, always review the instructions on xref:../updating/updating_a_cluster/updating-cluster-web-console.adoc#updating-cluster-web-console[updating your cluster] properly.
-====
+// 4.16.57 Rns and updating
+include::modules/zstream-4-16-57.adoc[leveloffset=+2]
 
 // About 4-16-56 release notes
 include::modules/zstream-4-16-56-about.adoc[leveloffset=+2]
