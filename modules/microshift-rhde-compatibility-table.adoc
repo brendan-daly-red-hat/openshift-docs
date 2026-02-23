@@ -1,0 +1,47 @@
+// Module included in the following assemblies:
+//
+// * microshift_install_get_ready/microshift-install-get-ready.adoc
+// * microshift_troubleshooting/microshift-troubleshoot-updates.adoc
+// * microshift_updating/microshift-update-options.adoc
+
+:_mod-docs-content-type: REFERENCE
+[id="microshift-rhde-compatibility-table_{context}"]
+= {op-system-bundle} release compatibility matrix
+
+[role="_abstract"]
+{op-system-base-full} and {microshift-short} work together as a single solution for device-edge computing. You can update each component separately, but the product versions must be compatible.
+
+Supported configurations of {op-system-bundle} use verified releases for each together as listed in the following table:
+
+[cols="4",%autowidth]
+|===
+^|*{op-system-ostree} Version(s)*
+^|*{microshift-short} Version*
+^|*{microshift-short} Release Status*
+^|*Supported {microshift-short} Version&#8594;{microshift-short} Version Updates*
+
+^|9.4
+^|4.16
+^|Generally Available
+^|4.16.0&#8594;4.16.z, 4.14&#8594;4.16 and 4.15&#8594;4.16
+
+^|9.2, 9.3
+^|4.15
+^|Generally Available
+^|4.15.0&#8594;4.15.z, 4.14&#8594;4.15 and 4.15&#8594;4.16
+
+^|9.2, 9.3
+^|4.14
+^|Generally Available
+^|4.14.0&#8594;4.14.z, 4.14&#8594;4.15 and 4.14&#8594;4.16
+
+^|9.2
+^|4.13
+^|Technology Preview
+^|None
+
+^|8.7
+^|4.12
+^|Developer Preview
+^|None
+|===

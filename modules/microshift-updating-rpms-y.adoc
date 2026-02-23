@@ -13,17 +13,17 @@ Updating a {microshift-short} minor version on non `rpm-ostree` systems such as 
 You can only update {microshift-short} from one version to the next in sequence. Jumping minor versions is not supported. For example, must update 4.15 to 4.16.
 ====
 
+[NOTE]
+====
+You cannot downgrade {microshift-short} with this process. Downgrades are not supported.
+====
+
 .Prerequisites
 * The system requirements for installing {microshift-short} have been met.
 * You have root user access to the host.
 * The version of {microshift-short} you have is compatible to upgrade to the version you are preparing to use.
 * You have verified that your host operating system is compatible with the version of {microshift-short} you are preparing to install.
 * You have completed a system backup.
-
-[NOTE]
-====
-You cannot downgrade {microshift-short} with this process. Downgrades are not supported.
-====
 
 .Procedure
 
@@ -65,7 +65,7 @@ $ sudo dnf update microshift
 ----
 $ sudo systemctl reboot
 ----
-
++
 [NOTE]
 ====
 The system health check runs on this update type, but does not perform any actions. If the update fails, an error message appears with the instruction to check the logs.

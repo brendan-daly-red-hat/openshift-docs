@@ -15,7 +15,7 @@ include::modules/microshift-install-system-requirements.adoc[leveloffset=+1]
 
 Plan to pair a supported version of {op-system-ostree} with the {microshift-short} version you are using as described in the following compatibility table:
 
-include::snippets/microshift-rhde-compatibility-table-snip.adoc[leveloffset=+1]
+include::modules/microshift-rhde-compatibility-table.adoc[leveloffset=+2]
 
 include::modules/microshift-install-rpm-before.adoc[leveloffset=+1]
 

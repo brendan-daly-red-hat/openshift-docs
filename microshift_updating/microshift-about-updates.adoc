@@ -30,7 +30,7 @@ Using the {op-system-ostree} `rpm-ostree` update path allows for automated backu
 
 Check following compatibility table for details:
 
-include::snippets/microshift-rhde-compatibility-table-snip.adoc[leveloffset=+1]
+include::modules/microshift-rhde-compatibility-table.adoc[leveloffset=+3]
 
 [id="microshift-about-updates-rpm-updates_{context}"]
 === Manual RPM updates
