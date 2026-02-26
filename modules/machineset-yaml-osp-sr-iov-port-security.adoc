@@ -92,11 +92,16 @@ spec:
 where:
 
 --
-`allowedAddressPairs`:: Specifies the allowed address pairs for the API and ingress ports.
-`<machines_subnet_UUID>`:: Specifies the machines network and subnet.
-`<machines_network_UUID>`:: Specifies the machines network and subnet.
+`<API_VIP_port_IP>`:: Specifies the allowed address for the API port. This value is paired with the allowed address for the ingress port.
+`<ingress_VIP_port_IP>`:: Specifies the allowed address for the ingress port. This value is paired with the allowed address for the API port.
+`<machines_subnet_UUID>`:: Specifies the machines subnet.
+`<machines_network_UUID>`:: Specifies the machines network.
 `<compute_security_group_UUID>`:: Specifies the compute machines security group.
-`<true>`:: The value of the `configDrive` parameter must be `true`.
++
+[NOTE]
+====
+The value of the `configDrive` parameter must be `true`.
+====
 --
 [NOTE]
 ====

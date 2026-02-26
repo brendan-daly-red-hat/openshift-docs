@@ -17,6 +17,10 @@ include::modules/machineset-yaml-osp.adoc[leveloffset=+1]
 
 include::modules/machineset-yaml-osp-sr-iov.adoc[leveloffset=+1]
 
+[role="_additional-resources"]
+.Additional resources
+* xref:../../installing/installing_openstack/installing-openstack-nfv-preparing.adoc#installing-openstack-nfv-preparing[Preparing to install a cluster that uses SR-IOV or OVS-DPDK on OpenStack]
+
 include::modules/machineset-yaml-osp-sr-iov-port-security.adoc[leveloffset=+1]
 
 include::modules/machineset-creating.adoc[leveloffset=+1]
@@ -26,7 +30,6 @@ include::modules/machineset-label-gpu-autoscaler.adoc[leveloffset=+1]
 
 [role="_additional-resources"]
 .Additional resources
-* xref:../../installing/installing_openstack/installing-openstack-nfv-preparing.adoc#installing-openstack-nfv-preparing[Preparing to install a cluster that uses SR-IOV or OVS-DPDK on OpenStack]
 * xref:../../machine_management/applying-autoscaling.adoc#cluster-autoscaler-cr_applying-autoscaling[Cluster autoscaler resource definition]
 
 // Mothballed - re-add when available
