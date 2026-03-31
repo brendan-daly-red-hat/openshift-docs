@@ -52,7 +52,7 @@ $ oc create secret generic worker-user-data \
   --from-file=<installation_directory>/worker.ign
 ----
 +
-Specifies the directory that was used to store your installation assets during cluster installation.
+The `<installation_directory>` value specifies the directory that was used to store your installation assets during cluster installation.
 
 ifeval::["{context}" == "creating-machineset-vsphere"]
 :!vsphere:
