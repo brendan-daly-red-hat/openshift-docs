@@ -16,7 +16,7 @@ include::_attributes/common-attributes.adoc[]
 = Enabling Accelerated Networking on an existing {azure-full} cluster
 
 [role="_abstract"]
-You can enable Accelerated Networking on {azure-full} by adding `acceleratedNetworking` to your machine set YAML file. This uses SR-IOV to help improve network performance for new nodes.
+You can enable Accelerated Networking on {azure-full} by adding `acceleratedNetworking` to your machine set YAML file. This uses SR-IOV to help improve network performance for new node.
 
 .Prerequisites
 
