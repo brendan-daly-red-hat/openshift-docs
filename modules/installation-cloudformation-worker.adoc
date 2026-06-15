@@ -7,6 +7,7 @@
 [id="installation-cloudformation-worker_{context}"]
 = CloudFormation template for compute machines
 
+[role="_abstract"]
 You can deploy the compute machines that you need for your {product-title} cluster by using the following CloudFormation template.
 
 .CloudFormation template for compute machines
