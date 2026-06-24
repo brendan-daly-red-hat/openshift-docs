@@ -8,7 +8,7 @@
 = CloudFormation template for the bootstrap machine
 
 [role="_abstract"]
-You can use the following CloudFormation template to deploy the bootstrap machine that you need for your {product-title} cluster.
+Use the CloudFormation template to deploy the bootstrap machine that you need for your {product-title} cluster.
 
 .CloudFormation template for the bootstrap machine
 [%collapsible]

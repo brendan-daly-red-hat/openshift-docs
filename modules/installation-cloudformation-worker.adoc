@@ -8,7 +8,7 @@
 = CloudFormation template for compute machines
 
 [role="_abstract"]
-You can deploy the compute machines that you need for your {product-title} cluster by using the following CloudFormation template.
+Use the CloudFormation template to deploy the compute machines that you need for your {product-title} cluster.
 
 .CloudFormation template for compute machines
 [%collapsible]
