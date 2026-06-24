@@ -62,8 +62,9 @@ INFO Time elapsed: 1s
 ====
 --
 
-ifdef::restricted[]
-. Register your cluster on the link:https://console.redhat.com/openshift/register[Cluster registration] page.
-endif::restricted[]
-
 ifeval::["{context}" == "installing-restricted-networks-aws"]
+:!restricted:
+endif::[]
+ifdef::openshift-origin[]
+:!restricted:
+endif::[]
