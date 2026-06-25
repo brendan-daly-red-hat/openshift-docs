@@ -40,8 +40,7 @@ $ ./openshift-install --dir <installation_directory> wait-for install-complete
 where:
 
 `<installation_directory>`:: Specifies the path to the directory that you stored the installation files in.
-+
---
+
 .Example output
 [source,terminal]
 ----
@@ -60,7 +59,10 @@ INFO Time elapsed: 1s
 
 * It is recommended that you use Ignition config files within 12 hours after they are generated because the 24-hour certificate rotates from 16 to 22 hours after the cluster is installed. By using the Ignition config files within 12 hours, you can avoid installation failure if the certificate update runs during installation.
 ====
---
+
+ifdef::restricted[]
+. Register your cluster on the link:https://console.redhat.com/openshift/register[Cluster registration] page.
+endif::restricted[]
 
 ifeval::["{context}" == "installing-restricted-networks-aws"]
 :!restricted:
