@@ -8,7 +8,7 @@
 = Initializing the bootstrap sequence on AWS with user-provisioned infrastructure
 
 [role="_abstract"]
-After you create all of the required infrastructure in {aws-first}, you can start the bootstrap sequence that initializes the {product-title} control plane. TESTT
+After you create all of the required infrastructure in {aws-first}, you can start the bootstrap sequence that initializes the {product-title} control plane.
 
 .Prerequisites
 
