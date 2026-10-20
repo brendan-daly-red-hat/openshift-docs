@@ -478,7 +478,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <!-- navmap-right-toc-end -->
 </head>
-<body id="cluster-management-tasks-intro_cluster-management-tasks" class="book toc2 toc-left navmap-has-right-toc">
+<body id="post-install-cluster-tasks-intro_post-install-cluster-tasks" class="book toc2 toc-left navmap-has-right-toc">
 <div id="header">
 <h1>Red Hat OpenShift Container Platform</h1>
 <div id="toc" class="toc2">
@@ -902,7 +902,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="_configure.html">Configure</a>
 <ul class="sectlevel2">
-<li><a href="cluster-management-tasks-intro_cluster-management-tasks.html"><span class="toc-current">Cluster management tasks</span></a>
+<li><a href="post-install-cluster-tasks-intro_post-install-cluster-tasks.html"><span class="toc-current">Postinstallation cluster tasks</span></a>
 </li>
 <li><a href="change-the-installed-disk-partition-schema-for-new-nodes-con_change-the-installed-disk-partition-schema-for-new-nodes.html">Change the installed disk-partition schema for new nodes</a>
 </li>
@@ -1781,10 +1781,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
-<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#configuration-resources_cluster-management-tasks">Cluster configuration resources</a></li><li class="level-4"><a href="#operator-configuration-resources_cluster-management-tasks">Operator configuration resources</a></li><li class="level-4"><a href="#additional-configuration-resources_cluster-management-tasks">Additional configuration resources</a></li><li class="level-4"><a href="#informational-resources_cluster-management-tasks">Informational resources</a></li><li class="level-4"><a href="#adding-worker-nodes_cluster-management-tasks">Adding worker nodes</a></li><li class="level-4"><a href="#adding-nodes-iso_cluster-management-tasks">Adding worker nodes to an on-premise cluster</a></li><li class="level-4"><a href="#adding-nodes-ipi_cluster-management-tasks">Adding worker nodes to installer-provisioned infrastructure clusters</a></li><li class="level-4"><a href="#adding-nodes-upi_cluster-management-tasks">Adding worker nodes to user-provisioned infrastructure clusters</a></li><li class="level-4"><a href="#adding-nodes-assisted_cluster-management-tasks">Adding worker nodes to clusters managed by the Assisted Installer</a></li><li class="level-4"><a href="#adding-nodes-mce_cluster-management-tasks">Adding worker nodes to clusters managed by the multicluster engine for Kubernetes</a></li><li class="level-4"><a href="#post-install-adjust-worker-nodes_cluster-management-tasks">Adjust worker nodes</a></li><li class="level-4"><a href="#post-install-cpms-setup_cluster-management-tasks">Managing control plane machines</a></li><li class="level-4"><a href="#custer-tasks-applying-autoscaling_cluster-management-tasks">Applying autoscaling to your cluster</a></li><li class="level-4"><a href="#post-install-tp-tasks_cluster-management-tasks">Enabling Technology Preview features using FeatureGates</a></li><li class="level-4"><a href="#manual-defrag-etcd-data_cluster-management-tasks">Manually defragmenting etcd data</a></li><li class="level-4"><a href="#dr-scenario-2-restoring-cluster-state_cluster-management-tasks">Restoring to an earlier cluster state for more than one node</a></li><li class="level-4"><a href="#dr-scenario-cluster-state-issues_cluster-management-tasks">Issues and workarounds for restoring a persistent storage state</a></li><li class="level-4"><a href="#post-install-pod-disruption-budgets_cluster-management-tasks">Pod disruption budgets</a></li></ul></aside>
+<aside id="navmap-right-toc" aria-label="On this page"><h2>On this page</h2><ul><li class="level-4"><a href="#configuration-resources_post-install-cluster-tasks">Cluster configuration resources</a></li><li class="level-4"><a href="#operator-configuration-resources_post-install-cluster-tasks">Operator configuration resources</a></li><li class="level-4"><a href="#additional-configuration-resources_post-install-cluster-tasks">Additional configuration resources</a></li><li class="level-4"><a href="#informational-resources_post-install-cluster-tasks">Informational resources</a></li><li class="level-4"><a href="#adding-worker-nodes_post-install-cluster-tasks">Adding worker nodes</a></li><li class="level-4"><a href="#adding-nodes-iso_post-install-cluster-tasks">Adding worker nodes to an on-premise cluster</a></li><li class="level-4"><a href="#adding-nodes-ipi_post-install-cluster-tasks">Adding worker nodes to installer-provisioned infrastructure clusters</a></li><li class="level-4"><a href="#adding-nodes-upi_post-install-cluster-tasks">Adding worker nodes to user-provisioned infrastructure clusters</a></li><li class="level-4"><a href="#adding-nodes-assisted_post-install-cluster-tasks">Adding worker nodes to clusters managed by the Assisted Installer</a></li><li class="level-4"><a href="#adding-nodes-mce_post-install-cluster-tasks">Adding worker nodes to clusters managed by the multicluster engine for Kubernetes</a></li><li class="level-4"><a href="#post-install-adjust-worker-nodes_post-install-cluster-tasks">Adjust worker nodes</a></li><li class="level-4"><a href="#post-install-cpms-setup_post-install-cluster-tasks">Managing control plane machines</a></li><li class="level-4"><a href="#custer-tasks-applying-autoscaling_post-install-cluster-tasks">Applying autoscaling to your cluster</a></li><li class="level-4"><a href="#post-install-tp-tasks_post-install-cluster-tasks">Enabling Technology Preview features using FeatureGates</a></li><li class="level-4"><a href="#manual-defrag-etcd-data_post-install-cluster-tasks">Manually defragmenting etcd data</a></li><li class="level-4"><a href="#dr-scenario-2-restoring-cluster-state_post-install-cluster-tasks">Restoring to an earlier cluster state for more than one node</a></li><li class="level-4"><a href="#dr-scenario-cluster-state-issues_post-install-cluster-tasks">Issues and workarounds for restoring a persistent storage state</a></li><li class="level-4"><a href="#post-install-pod-disruption-budgets_post-install-cluster-tasks">Pod disruption budgets</a></li></ul></aside>
 <div id="content">
 <div class="sect2">
-<h3 id="cluster-management-tasks-intro_cluster-management-tasks">Cluster management tasks</h3>
+<h3 id="post-install-cluster-tasks-intro_post-install-cluster-tasks">Postinstallation cluster tasks</h3>
 <div class="paragraph _abstract">
 <p>After installing Red&#160;Hat OpenShift Container Platform, you can configure, scale, and maintain your cluster to meet operational requirements, including managing nodes and infrastructure workloads, enabling features, applying autoscaling, and maintaining etcd.</p>
 </div>
@@ -1801,7 +1801,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>For current documentation of the settings that you control by using these resources, use the <code>oc explain</code> command, for example <code>oc explain builds --api-version=config.openshift.io/v1</code></p>
 </div>
 <div class="sect3">
-<h4 id="configuration-resources_cluster-management-tasks">Cluster configuration resources</h4>
+<h4 id="configuration-resources_post-install-cluster-tasks">Cluster configuration resources</h4>
 <div class="paragraph _abstract">
 <p>Review the globally scoped cluster configuration resources that control major features of an Red&#160;Hat OpenShift Container Platform cluster.</p>
 </div>
@@ -2067,7 +2067,7 @@ so that you can use Tech Preview features.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="operator-configuration-resources_cluster-management-tasks">Operator configuration resources</h4>
+<h4 id="operator-configuration-resources_post-install-cluster-tasks">Operator configuration resources</h4>
 <div class="paragraph _abstract">
 <p>Review the cluster-scoped Operator configuration resources that control the behavior of specific Red&#160;Hat OpenShift Container Platform components.</p>
 </div>
@@ -2159,7 +2159,7 @@ to control which example image streams and templates are installed on the cluste
 </table>
 </div>
 <div class="sect3">
-<h4 id="additional-configuration-resources_cluster-management-tasks">Additional configuration resources</h4>
+<h4 id="additional-configuration-resources_post-install-cluster-tasks">Additional configuration resources</h4>
 <div class="paragraph _abstract">
 <p>Review the additional configuration resources that represent a single instance of a particular Red&#160;Hat OpenShift Container Platform component.</p>
 </div>
@@ -2273,7 +2273,7 @@ documentation for details on how and when you can create additional resource ins
 </table>
 </div>
 <div class="sect3">
-<h4 id="informational-resources_cluster-management-tasks">Informational resources</h4>
+<h4 id="informational-resources_post-install-cluster-tasks">Informational resources</h4>
 <div class="paragraph _abstract">
 <p>Review the informational resources that you can use to retrieve information about an Red&#160;Hat OpenShift Container Platform cluster.</p>
 </div>
@@ -2430,7 +2430,7 @@ resource for production clusters. Instead, follow the process to
 </table>
 </div>
 <div class="sect3">
-<h4 id="adding-worker-nodes_cluster-management-tasks">Adding worker nodes</h4>
+<h4 id="adding-worker-nodes_post-install-cluster-tasks">Adding worker nodes</h4>
 <div class="paragraph _abstract">
 <p>After you deploy your Red&#160;Hat OpenShift Container Platform cluster, you can add worker nodes to scale cluster resources using the method that matches your installation type and environment.</p>
 </div>
@@ -2439,7 +2439,7 @@ resource for production clusters. Instead, follow the process to
 </div>
 </div>
 <div class="sect3">
-<h4 id="adding-nodes-iso_cluster-management-tasks">Adding worker nodes to an on-premise cluster</h4>
+<h4 id="adding-nodes-iso_post-install-cluster-tasks">Adding worker nodes to an on-premise cluster</h4>
 <div class="paragraph _abstract">
 <p>Add worker nodes to an on-premise Red&#160;Hat OpenShift Container Platform cluster by using the OpenShift CLI to generate an ISO image.</p>
 </div>
@@ -2456,7 +2456,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="adding-nodes-ipi_cluster-management-tasks">Adding worker nodes to installer-provisioned infrastructure clusters</h4>
+<h4 id="adding-nodes-ipi_post-install-cluster-tasks">Adding worker nodes to installer-provisioned infrastructure clusters</h4>
 <div class="paragraph _abstract">
 <p>Add worker nodes to installer-provisioned infrastructure clusters by scaling machine sets or provisioning bare-metal hosts.</p>
 </div>
@@ -2468,7 +2468,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="adding-nodes-upi_cluster-management-tasks">Adding worker nodes to user-provisioned infrastructure clusters</h4>
+<h4 id="adding-nodes-upi_post-install-cluster-tasks">Adding worker nodes to user-provisioned infrastructure clusters</h4>
 <div class="paragraph _abstract">
 <p>Add worker nodes to user-provisioned infrastructure clusters by using an ISO image and Ignition config files.</p>
 </div>
@@ -2477,7 +2477,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="adding-nodes-assisted_cluster-management-tasks">Adding worker nodes to clusters managed by the Assisted Installer</h4>
+<h4 id="adding-nodes-assisted_post-install-cluster-tasks">Adding worker nodes to clusters managed by the Assisted Installer</h4>
 <div class="paragraph _abstract">
 <p>Add worker nodes to Assisted Installer clusters by using Red Hat OpenShift Cluster Manager, the REST API, or a manual ISO process.</p>
 </div>
@@ -2486,7 +2486,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="adding-nodes-mce_cluster-management-tasks">Adding worker nodes to clusters managed by the multicluster engine for Kubernetes</h4>
+<h4 id="adding-nodes-mce_post-install-cluster-tasks">Adding worker nodes to clusters managed by the multicluster engine for Kubernetes</h4>
 <div class="paragraph _abstract">
 <p>Add worker nodes to multicluster engine for Kubernetes clusters by using the dedicated console.</p>
 </div>
@@ -2495,7 +2495,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="post-install-adjust-worker-nodes_cluster-management-tasks">Adjust worker nodes</h4>
+<h4 id="post-install-adjust-worker-nodes_post-install-cluster-tasks">Adjust worker nodes</h4>
 <div class="paragraph _abstract">
 <p>Resize worker nodes by creating new compute machine sets, scaling them up, and scaling down the original machine set before removal.</p>
 </div>
@@ -2504,7 +2504,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="post-install-cpms-setup_cluster-management-tasks">Managing control plane machines</h4>
+<h4 id="post-install-cpms-setup_post-install-cluster-tasks">Managing control plane machines</h4>
 <div class="paragraph _abstract">
 <p>Use control plane machine sets to manage control plane machines with capabilities similar to compute machine sets.</p>
 </div>
@@ -2513,7 +2513,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="custer-tasks-applying-autoscaling_cluster-management-tasks">Applying autoscaling to your cluster</h4>
+<h4 id="custer-tasks-applying-autoscaling_post-install-cluster-tasks">Applying autoscaling to your cluster</h4>
 <div class="paragraph _abstract">
 <p>Deploy a cluster autoscaler and machine autoscalers to apply autoscaling across machine types in your cluster.</p>
 </div>
@@ -2522,7 +2522,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="post-install-tp-tasks_cluster-management-tasks">Enabling Technology Preview features using FeatureGates</h4>
+<h4 id="post-install-tp-tasks_post-install-cluster-tasks">Enabling Technology Preview features using FeatureGates</h4>
 <div class="paragraph _abstract">
 <p>Enable Technology Preview features cluster-wide by editing the <code>FeatureGate</code> custom resource.</p>
 </div>
@@ -2531,7 +2531,7 @@ Any configurations that are not specified during ISO generation are retrieved fr
 </div>
 </div>
 <div class="sect3">
-<h4 id="manual-defrag-etcd-data_cluster-management-tasks">Manually defragmenting etcd data</h4>
+<h4 id="manual-defrag-etcd-data_post-install-cluster-tasks">Manually defragmenting etcd data</h4>
 <div class="paragraph _abstract">
 <p>When automatic etcd defragmentation cannot reclaim enough space, manually defragment etcd on each member to restore disk availability and normal cluster operation.</p>
 </div>
@@ -2739,7 +2739,7 @@ Use 'oc describe pod/etcd-ip-10-0-159-225.example.redhat.com -n openshift-etcd' 
 </div>
 </div>
 <div class="sect3">
-<h4 id="dr-scenario-2-restoring-cluster-state_cluster-management-tasks">Restoring to an earlier cluster state for more than one node</h4>
+<h4 id="dr-scenario-2-restoring-cluster-state_post-install-cluster-tasks">Restoring to an earlier cluster state for more than one node</h4>
 <div class="paragraph _abstract">
 <p>To restore your Red&#160;Hat OpenShift Container Platform cluster with more than one control plane node to an earlier state, use a saved etcd snapshot after quorum loss or critical data deletion.</p>
 </div>
@@ -2953,7 +2953,7 @@ Use 'oc describe pod/etcd-ip-10-0-159-225.example.redhat.com -n openshift-etcd' 
 </div>
 </div>
 <div class="sect3">
-<h4 id="dr-scenario-cluster-state-issues_cluster-management-tasks">Issues and workarounds for restoring a persistent storage state</h4>
+<h4 id="dr-scenario-cluster-state-issues_post-install-cluster-tasks">Issues and workarounds for restoring a persistent storage state</h4>
 <div class="paragraph _abstract">
 <p>To restore workloads safely after an etcd snapshot restore, identify and resolve outdated persistent storage references, including volumes, credentials, attachments, and devices on your Red&#160;Hat OpenShift Container Platform cluster.</p>
 </div>
@@ -3011,7 +3011,7 @@ Use 'oc describe pod/etcd-ip-10-0-159-225.example.redhat.com -n openshift-etcd' 
 </div>
 </div>
 <div class="sect3">
-<h4 id="post-install-pod-disruption-budgets_cluster-management-tasks">Pod disruption budgets</h4>
+<h4 id="post-install-pod-disruption-budgets_post-install-cluster-tasks">Pod disruption budgets</h4>
 <div class="paragraph _abstract">
 <p>Understand and configure pod disruption budgets to control voluntary disruptions during cluster operations.</p>
 </div>
@@ -3029,7 +3029,7 @@ Use 'oc describe pod/etcd-ip-10-0-159-225.example.redhat.com -n openshift-etcd' 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-10-20 14:23:38 +0100
+Last updated 2026-10-20 14:40:03 +0100
 </div>
 </div>
 <style>
